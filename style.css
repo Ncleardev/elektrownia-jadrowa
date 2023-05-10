@@ -1,4 +1,5 @@
 @keyframes welcome {
+
   0%,
   30% {
     opacity: 0;
@@ -39,6 +40,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img{
+  max-width: 100%;
+}
+
 p {
   margin: 0;
 }
@@ -51,7 +56,7 @@ a {
   display: none;
 }
 
-.container:hover+.hide {
+.unhide:hover+.hide {
   display: block;
 }
 
@@ -64,41 +69,9 @@ a {
   box-shadow: white 0px 0px 7px;
 }
 
-h2 {
-  overflow: hidden;
-}
-
-h2:before,
-h2:after {
-  background-color: white;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-  box-shadow: white 0px 0px 7px;
-}
-
-h2:before {
-  right: 0.5em;
-  margin-left: -50%;
-}
-
-h2:after {
-  left: 0.5em;
-  margin-right: -50%;
-}
-
 a:link,
 a:visited {
   color: white;
-}
-
-#time {
-  float: left;
-  font-size: 20px;
-  padding: 10px 10px;
 }
 
 .projects {
@@ -155,30 +128,6 @@ div.galleryR:hover {
   opacity: 1;
 }
 
-.bigproject {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 20px;
-  background-image: url("https://raw.githubusercontent.com/Ncleardev/NclearOS-2/main/Screenshots/WallpaperNew.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  opacity: 0.7;
-  box-shadow: 0 0 50px #004dff;
-  transition: 0.5s all;
-}
-
-.bigproject:hover {
-  transform: scale(1.05);
-  opacity: 1;
-  box-shadow: 0 0 50px white;
-  transition: 0.5s all;
-}
-
 .button {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
@@ -196,29 +145,9 @@ div.galleryR:hover {
   max-height: 100%;
 }
 
-#dc:hover {
-  background: #5865F2;
-  box-shadow: 0 0px 10px #5865F2, 0 0px 20px #5865F2;
-}
-
-#github:hover {
-  background: #333;
-  box-shadow: 0 0px 10px #333, 0 0px 20px #333;
-}
-
-#reddit:hover {
-  background: #FF5700;
-  box-shadow: 0 0px 10px #FF5700, 0 0px 20px #FF5700;
-}
-
-#yt:hover {
+.button:hover {
   background: red;
   box-shadow: 0 0px 10px red, 0 0px 20px red;
-}
-
-#email:hover {
-  background: limegreen;
-  box-shadow: 0 0px 10px limegreen, 0 0px 20px limegreen;
 }
 
 #end {
@@ -255,7 +184,7 @@ div.galleryR:hover {
   padding: 10px 10px;
   transition: 0.4s all;
   display: inline-block;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .topnav a:hover {
@@ -268,12 +197,17 @@ div.galleryR:hover {
   transition: 0s all;
 }
 
-img {
+#top {
   filter: blur(7px);
 }
 
 @media only screen and (max-width: 900px) {
-  img {
+  #top {
     filter: blur(3px);
   }
+}
+
+#t{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
 }
