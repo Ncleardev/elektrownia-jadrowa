@@ -8,17 +8,26 @@
 
 @keyframes nogravity {
   0% {
-    transform: translateY(10px);
+    transform: translateY(0px);
   }
 
   100% {
-    transform: translateY(50px);
+    transform: translateY(40px);
   }
 }
 
 @keyframes topnavwelcome {
   0% {
     transform: translateY(-50px);
+  }
+}
+
+@keyframes shadow{
+  0%{
+    scale: 0.8;
+  }
+  100%{
+    scale: 1;
   }
 }
 
@@ -37,10 +46,10 @@ body {
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -67,6 +76,16 @@ a {
   height: 3px;
   background-color: white;
   box-shadow: white 0px 0px 7px;
+}
+
+.nogravity{
+  animation: nogravity 3s ease-in-out infinite alternate;
+}
+
+.shadow{
+  height: 200px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0), rgba(0,0,0,0));
+  animation: shadow 3s ease-in-out infinite alternate;
 }
 
 a:link,
@@ -207,7 +226,19 @@ div.galleryR:hover {
   }
 }
 
-#t{
+.interactive {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#image-description3, #image-description2, #image-description1 {
+  transform: scale(0);
+  padding: 20px;
+  transition: 1s all;
+}
+
+.images .image-container{
+  float: left;
 }
