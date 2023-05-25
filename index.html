@@ -24,7 +24,7 @@
     Witaj na stronie poświęconej tematowi jak działa elektrownia jądrowa. Dowiedz się, jak działa ta nowoczesna
     technologia i jak produkuje energię.
   </marquee>
-  <img src="files/main.gif" style="width: 100%;" id="top" alt="Welcome Image">
+  <img src="files/main.gif" style="width: 100%; max-width: 100%;" id="top" alt="Welcome Image">
 
   <h2 id="construction">Budowa elektrowni</h2>
   <p>Elektrownia jądrowa jest rodzajem elektrowni cieplnej, w której energia atomowa ulega przemianie w energię cieplną,
@@ -32,12 +32,11 @@
     elektrowni konwencjonalnych, jednak różnią się źródłem generowania ciepła. Elektrownia jądrowa wykorzystuje reakcje
     rozszczepienia jąder wewnątrz reaktora, podczas gdy elektrownie konwencjonalne spalają paliwa kopalne.
     <br><br>Elektrownia jądrowa składa się z wielu elementów, które są niezbędne do wytwarzania energii elektrycznej.
-    <br>Poniżej przedstawiony jest schemat elektrowni typu PWR, który jest obecnie powszechnie stosowany. Na schemacie
-    można zauważyć trzy obiegi wodne:
+    <br>Poniżej przedstawiony jest schemat reaktora wodno-ciśnieniowego (PWR) - najczęściej stosowanego na świecie. W tych reaktorach woda jest używana jako
+    chłodziwo i moderator neutronów. Można wyróżnić trzy obiegi wodne:
   </p>
   <div class="interactive">
-    <p style="font-size: small;"><a href="https://commons.wikimedia.org/wiki/File:BoilingWaterReactor.gif">U.S.NRC.</a>,
-      Public domain, via Wikimedia Commons, modified</p>
+    <p style="font-size: small;"><a href="https://commons.wikimedia.org/wiki/File:PressurizedWaterReactor.gif">U.S.NRC.</a>, Public domain, via Wikimedia Commons</p>
     <div class="gallery">
       <img src="files/elektrownia1.png" id="left" style="width: 28%;"><img src="files/elektrownia2.png" id="middle"
         style="width: 30%;"><img src="files/elektrownia3.png" id="right" style="width: 42%;">
@@ -48,7 +47,7 @@
       przekształca się w parę. Ta para napędza turbiny, które są połączone wałem do generatora, wytwarzającym prąd
       elektryczny. Para przekształca się z powrotem w stan ciekły w skraplaczu.</p>
     <p id="image-description3">Obieg chłodzący odbiera ciepło od skraplacza, a następnie oddaje je
-      w chłodnicach kominowych. Podczas tego procesu, około 1-2% masy wody odparowywuje.
+      w chłodnicach kominowych. Podczas tego procesu, około 1-2% masy wody odparowywuje w postaci pary wodnej. Cała uwolniona para nigdy nie ma kontaktu z radioaktywnością.
     </p>
   </div>
   <div class="img-txt">
@@ -63,11 +62,13 @@
       układzie. Pod wpływem bombardowania neutronami, jądra uranu 235 ulegają rozszczepieniu, uwalniając energię w
       postaci ciepła.</p>
   </div>
-  <p style="font-size: small; margin-right: 70%;"><a href="https://commons.wikimedia.org/wiki/File:Nuclear_reactor_core.jpg">Myesd</a>, <a
-    href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+  <p style="font-size: small; margin-right: 70%;"><a
+      href="https://commons.wikimedia.org/wiki/File:Nuclear_reactor_core.jpg">Myesd</a>, <a
+      href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Crocus-p1020491.jpg"
-  style="border-radius: 30px; width: 500px;">
-  <p style="font-size: small;"><a href="https://commons.wikimedia.org/wiki/File:Crocus-p1020491.jpg">Rama</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">CC BY-SA 2.0 FR</a>, via Wikimedia Commons</p>
+    style="border-radius: 30px; width: 500px;">
+  <p style="font-size: small;"><a href="https://commons.wikimedia.org/wiki/File:Crocus-p1020491.jpg">Rama</a>, <a
+      href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">CC BY-SA 2.0 FR</a>, via Wikimedia Commons</p>
   <h2 id="construction">Zalety i wady</h2>
   <div class="projects">
     <div class="galleryR">
@@ -121,27 +122,73 @@
 
   <br><br><br>
   <h2 id="types">Typy reaktorów</h2>
+  <p>Oprócz reaktorów wodno-ciśnieniowych (PWR) istnieje kilka innych rodzajów reaktorów jądrowych, z których każdy ma swoje unikalne cechy.
+    <div class="projects">
+      <div class="galleryN">
+        <p>Reaktory wodne wrzące (BWR) są podobne do reaktorów PWR, ale woda jest tutaj wykorzystywana zarówno jako chłodziwo,
+          jak i moderator neutronów. Woda w reaktorze wrze i przepływa bezpośrednio przez turbinę, napędzając ją bezpośrednio.
+          Reaktory BWR są mniej skomplikowane niż reaktory PWR i wymagają mniejszej ilości wody do chłodzenia.</p>
+          <img style="border-radius: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Boiling_water_reactor_english.svg/800px-Boiling_water_reactor_english.svg.png">
+          <p style="font-size: xx-small;"><a href="https://commons.wikimedia.org/wiki/File:Boiling_water_reactor_english.svg">Robert Steffens (alias RobbyBer 8 November 2004), SVG: Marlus_Gancher, Antonsusi (talk) using a file from Marlus_Gancher. See File talk:Schema Siedewasserreaktor.svg#License history</a>, <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>, via Wikimedia Commons</p>
+      </div>
+      <div class="galleryN">
+        <p>Reaktory ciężkowodne (HWR) są stosunkowo nowym typem reaktora jądrowego. W tych reaktorach ciężka woda jest używana
+          jako chłodziwo i moderator neutronów. Ciężka woda jest podobna do zwykłej wody, ale zawiera więcej atomów deuteru,
+          co czyni ją lepszym moderator neutronów. Reaktory HWR mają wiele zalet, w tym niższe wymagania dotyczące paliwa i
+          wysoką efektywność wytwarzania energii.</p>
+      </div>
+      <div class="galleryN">
+        <p>Reaktory na paliwo MOX: Reaktory na paliwo MOX (Mixed Oxide) wykorzystują mieszankę tlenków uranu i plutonu jako paliwo. Ten rodzaj reaktora umożliwia wykorzystanie plutonu uzyskanego z zużytego paliwa jądrowego innych reaktorów. Reaktory MOX są formą recyklingu paliwa jądrowego i przyczyniają się do redukcji odpadów radioaktywnych.</p>
+      </div>
+    </div>
+  </p>
   <h2 id="safety">Bezpieczeństwo</h2>
-  <p>Podczas budowy elektrowni jądrowej należy uwzględnić szereg zabezpieczeń mających na celu zapewnienie
-    bezpieczeństwa i minimalizację ryzyka. Wymagane zabezpieczenia obejmują m.in. systemy kontroli i monitoringu, które
+  <p>Podczas budowy elektrowni jądrowej muszą być uwzględnione różne zabezpieczenia, takie jak zabezpieczenia
+    przeciwwybuchowe, przeciwpożarowe, przeciwpowodziowe oraz systemy awaryjne i bezpieczeństwa. Elektrownia jądrowa
+    musi być zbudowana w taki sposób, aby była bezpieczna dla pracowników i dla środowiska naturalnego.
+    Wymagane zabezpieczenia obejmują m.in. systemy kontroli i monitoringu, które
     umożliwiają ciągłą obserwację procesów i wykrywanie ewentualnych awarii, systemy chłodzenia, które zapobiegają
     przegrzewaniu reaktora, a także środki ochrony przed skażeniami radiologicznymi, takie jak odpowiednie ekrany i
     tarcze ochronne, mające chronić personel i środowisko przed promieniowaniem. Ponadto, ważnym elementem jest także
     odpowiednie szkolenie personelu oraz wypracowanie procedur awaryjnych i planów ewakuacji w przypadku
-    nieprzewidzianych sytuacji.</p>
+    nieprzewidzianych sytuacji.
+  </p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/EBR-I_-_SCRAM_button.jpg"
     style="border-radius: 30px; width: 500px;">
   <p style="font-size: small;"><a href="https://commons.wikimedia.org/wiki/File:EBR-I_-_SCRAM_button.jpg">Alan Levine
       from Strawberry, United StatesRotated, cropped and restored by Bomazi.</a>, <a
       href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</p>
-
+  <div class="projects">
+    <div class="galleryY">
+      <p>Zabezpieczenia przed wyciekiem promieniowania: elektrownia jądrowa musi być zaprojektowana w taki sposób, aby
+        zapobiegać wyciekom promieniowania poza jej granice. Muszą być stosowane skuteczne systemy kontroli i
+        monitorowania poziomu promieniowania, a personel musi być przeszkolony w zakresie postępowania w przypadku
+        awarii.
+      </p>
+    </div>
+    <div class="galleryY">
+      <p>Systemy chłodzenia: reaktory jądrowe wymagają stałego chłodzenia, aby uniknąć przegrzania i uszkodzenia paliwa jądrowego. W przypadku awarii systemu chłodzenia, elektrownia musi mieć awaryjne systemy, które zapewnią chłodzenie reaktora, takie jak np. układ wstrzykiwania wody.</p>
+    </div>
+    <div class="galleryY">
+      <p>Zabezpieczenia przed pożarem: elektrownia musi być wyposażona w zaawansowane systemy przeciwpożarowe, które zapobiegną pożarom i ograniczą ich skutki, jeśli wystąpią. Muszą być stosowane odpowiednie materiały izolacyjne i odpornych na ogień, a obiekty muszą być zaprojektowane w sposób umożliwiający szybką ewakuację.</p>
+    </div>
+    <div class="galleryY">
+      <p>Zabezpieczenia przed włamaniem się osób niepowołanych: elektrownia musi być chroniona przed osobami niepowołanymi, które mogą uszkodzić lub przyczynić się do awarii systemów. Muszą być stosowane zaawansowane systemy monitorowania i ochrony, a personel musi być przeszkolony w zakresie bezpieczeństwa i postępowania w przypadku podejrzeń o włamanie lub sabotaż.</p>
+    </div>
+  </div>
   <h2 id="safety">Przyszłość</h2>
   <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/fission_release.jpg"
     style="border-radius: 30px; width: 500px;">
-  <p style="font-size: small;"><a href="https://www.nasa.gov/press-release/nasa-announces-artemis-concept-awards-for-nuclear-power-on-moon">Credits: NASA</a></p>
-  <p>Elektrownie jądrowe mają potencjał, aby odegrać istotną rolę w przyszłości, zwłaszcza w kontekście eksploracji kosmosu, takiej jak kolonizacja Księżyca. Ze względu na swoją wysoką gęstość energetyczną i możliwość długotrwałego dostarczania energii, elektrownie jądrowe mogą zapewnić niezbędną moc dla zaawansowanych systemów i infrastruktury na odległych planetach lub księżycach. Jednak oczywiście zastosowanie elektrowni jądrowych w kosmosie wymagałoby zaangażowania w zaawansowane technologie oraz bezpieczeństwo transportu materiałów radioaktywnych.</p>
-  
-  
+  <p style="font-size: small;"><a
+      href="https://www.nasa.gov/press-release/nasa-announces-artemis-concept-awards-for-nuclear-power-on-moon">Credits:
+      NASA</a></p>
+  <p>Elektrownie jądrowe mają potencjał, aby odegrać istotną rolę w przyszłości, zwłaszcza w kontekście eksploracji
+    kosmosu, takiej jak kolonizacja Księżyca. Ze względu na swoją wysoką gęstość energetyczną i możliwość długotrwałego
+    dostarczania energii, elektrownie jądrowe mogą zapewnić niezbędną moc dla zaawansowanych systemów i infrastruktury
+    na odległych planetach lub księżycach. Jednak oczywiście zastosowanie elektrowni jądrowych w kosmosie wymagałoby
+    zaangażowania w zaawansowane technologie oraz bezpieczeństwo transportu materiałów radioaktywnych.</p>
+
+
   <a href="#top" aria-label="Scroll to top" id="end">></a>
   <script src="script.js"></script>
 </body>

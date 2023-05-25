@@ -51,7 +51,7 @@ html {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 p {
@@ -215,7 +215,9 @@ h2:after {
 }
 
 div.galleryL,
-div.galleryR {
+div.galleryR,
+div.galleryN,
+div.galleryY {
   margin: 30px;
   border: 8px solid white;
   border-radius: 15px;
@@ -241,4 +243,30 @@ div.galleryR:hover {
   box-shadow: 0 0 30px rgb(0, 255, 0);
   scale: 1.1;
   opacity: 1;
+}
+
+div.galleryN:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 8px solid rgb(0, 0, 255);
+  box-shadow: 0 0 30px rgb(0, 0, 255);
+  scale: 1.1;
+  opacity: 1;
+}
+
+div.galleryY:hover {
+  background-color: rgba(255, 255, 0, 0.5);
+  border: 8px solid rgb(255, 255, 0);
+  box-shadow: 0 0 30px rgb(255, 255, 0);
+  scale: 1.1;
+  opacity: 1;
+}
+
+div.galleryN img:hover{
+  scale: 1.5;
+  transition: 1s all;
+}
+
+div.galleryN img{
+  z-index: 9999;
+  transition: 1s all;
 }
