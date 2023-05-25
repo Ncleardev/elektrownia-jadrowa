@@ -40,8 +40,9 @@ body {
   background-attachment: fixed;
   margin: 0;
   color: white;
-  font-size: x-large;
+  font-size: large;
   text-shadow: 0 0 10px white;
+  text-align: center;
   animation: welcome 2s;
 }
 
@@ -82,6 +83,32 @@ a {
 a:link,
 a:visited {
   color: white;
+}
+
+h2 {
+  overflow: hidden;
+}
+
+h2:before,
+h2:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  box-shadow: white 0px 0px 7px;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 #end {
@@ -176,4 +203,42 @@ a:visited {
 .img-txt p {
   display: inline-block;
   vertical-align: middle;
+}
+
+.image-container {
+  overflow: hidden;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.galleryL,
+div.galleryR {
+  margin: 30px;
+  border: 8px solid white;
+  border-radius: 15px;
+  width: 500px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.7;
+  box-shadow: 0 0 30px white;
+  transition: 0.5s ease all;
+}
+
+div.galleryL:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 8px solid rgb(255, 0, 0);
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+  scale: 1.1;
+  opacity: 1;
+}
+
+div.galleryR:hover {
+  background-color: rgba(0, 255, 0, 0.5);
+  border: 8px solid rgb(0, 255, 0);
+  box-shadow: 0 0 30px rgb(0, 255, 0);
+  scale: 1.1;
+  opacity: 1;
 }

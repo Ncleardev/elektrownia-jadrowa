@@ -6,17 +6,17 @@ const description2 = document.getElementById('image-description2');
 const description3 = document.getElementById('image-description3');
 
 leftImage.addEventListener('mouseenter', () => {
-  description1.style.fontSize = 'x-large';
+  description1.style.fontSize = 'large';
   description1.style.opacity = '1';
 });
 
 middleImage.addEventListener('mouseenter', () => {
-  description2.style.fontSize = 'x-large';
+  description2.style.fontSize = 'large';
   description2.style.opacity = '1';
 });
 
 rightImage.addEventListener('mouseenter', () => {
-  description3.style.fontSize = 'x-large';
+  description3.style.fontSize = 'large';
   description3.style.opacity = '1';
 });
 
